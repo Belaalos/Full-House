@@ -18,9 +18,20 @@ Website for Full House, an events and marketing company based in Egypt. We desig
 - Email: full.info.house@gmail.com
 - Instagram: https://instagram.com/fullhouse.egypt (@fullhouse.egypt)
 
+## Structure
+
+```
+index.html            final site, one self-contained page (what Pages serves)
+src/
+  index.html          same site, unbundled: references the folders below
+  assets/             photos (monochrome-graded Pexels stock) and logo files
+  fonts/              Poppins web fonts
+README.md
+```
+
 ## Run locally
 
-Open `index.html` in any browser.
+Open `index.html` in any browser. To work on the unbundled version, open `src/index.html` (keep the `assets` and `fonts` folders next to it).
 
 ## Deploy
 
