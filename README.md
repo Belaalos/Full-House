@@ -6,7 +6,7 @@ Website for Full House, an events and marketing company based in Egypt. We desig
 
 ## About the site
 
-- One self-contained page (`index.html`): fonts, images and scripts are all inline, so it works offline and needs no build step.
+- Plain HTML, CSS and JavaScript. No framework and no build step.
 - Sections: hero, who we are, vision and mission, what we do, who we work with, how we work, moments, inquiry.
 - Dark, monochrome design with lamp and light motion, built to stay smooth on phones.
 - Mobile-first: tested at iPhone width (390px). Tapping a scene in Moments opens it full screen.
@@ -21,17 +21,18 @@ Website for Full House, an events and marketing company based in Egypt. We desig
 ## Structure
 
 ```
-index.html            final site, one self-contained page (what Pages serves)
-src/
-  index.html          same site, unbundled: references the folders below
-  assets/             photos (monochrome-graded Pexels stock) and logo files
+index.html            page markup (what Pages serves)
+css/style.css         all styles
+js/main.js            all scripts (interactions, lightbox, animations)
+assets/
+  images/             photos (monochrome-graded Pexels stock) and logo files
   fonts/              Poppins web fonts
 README.md
 ```
 
 ## Run locally
 
-Open `index.html` in any browser. To work on the unbundled version, open `src/index.html` (keep the `assets` and `fonts` folders next to it).
+Open `index.html` in any browser. Keep the `css`, `js` and `assets` folders next to it.
 
 ## Deploy
 
